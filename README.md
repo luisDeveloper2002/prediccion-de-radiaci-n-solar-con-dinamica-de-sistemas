@@ -1,50 +1,208 @@
+# 🌞 Predicción de Radiación Solar en Tunja mediante Dinámica de Sistemas
 
-# .. simulation
+Sistema de simulación y predicción de la radiación solar en la ciudad de **Tunja, Boyacá**, utilizando **Dinámica de Sistemas**, análisis estadístico y modelos de regresión implementados en **Python**.
 
-...
+---
 
+## 📌 Descripción del proyecto
 
-## Run Locally
+Este proyecto tiene como propósito analizar el comportamiento histórico de la radiación solar en Tunja a partir de datos meteorológicos reales obtenidos desde una estación climática, para posteriormente construir un modelo capaz de:
 
-Clone the project
+* Simular escenarios futuros
+* Predecir niveles de radiación solar
+* Evaluar relaciones entre variables atmosféricas
+* Apoyar decisiones en energías renovables
+
+El modelo considera la interacción entre:
+
+* ☁️ Nubosidad
+* 💧 Humedad relativa
+* 🌧️ Pluviosidad
+* ☀️ Horas de brillo solar
+* 🌞 Radiación solar
+
+---
+
+## 🎯 Objetivos
+
+### Objetivo general
+
+Desarrollar un modelo computacional que permita predecir la radiación solar utilizando dinámica de sistemas y datos meteorológicos históricos.
+
+### Objetivos específicos
+
+* Analizar datos meteorológicos históricos.
+* Identificar relaciones causales entre variables.
+* Implementar un modelo matemático predictivo.
+* Simular comportamiento futuro de la radiación.
+* Validar la precisión del modelo.
+
+---
+
+## 🧠 Metodología aplicada
+
+El proyecto se desarrolló en cuatro etapas principales:
+
+### 1. Recolección y depuración de datos
+
+Se procesaron archivos `.xlsx` con información meteorológica histórica para generar un dataset limpio en formato `.csv`.
+
+### 2. Modelado causal
+
+Se construyó un diagrama de relaciones entre variables:
+
+* Mayor nubosidad → menor radiación
+* Mayor brillo solar → mayor radiación
+* Mayor pluviosidad → mayor humedad relativa
+
+### 3. Regresión lineal múltiple
+
+Se implementaron modelos matemáticos para estimar el comportamiento de las variables:
+
+Y = β₀ + β₁X₁ + β₂X₂ + ... + βₙXₙ
+
+### 4. Simulación
+
+Se generaron predicciones día a día usando:
+
+* Números pseudoaleatorios
+* Distribuciones normales
+* Modelos de regresión
+
+---
+
+## 🏗️ Arquitectura del sistema
+
+El proyecto sigue una estructura modular:
 
 ```bash
-  git clone ...
+project/
+│── data/                # Datos meteorológicos
+│── models/              # Modelos matemáticos
+│── utils/               # Generación de números aleatorios
+│── presenters/          # Patrón MVP
+│── views/               # Interfaz gráfica
+│── main.py              # Punto de entrada
 ```
 
-Go to the project directory
+---
+
+## ⚙️ Tecnologías utilizadas
+
+* 🐍 Python
+* 📊 Pandas
+* 🔢 NumPy
+* 📈 Matplotlib
+* 🤖 Scikit-learn
+
+---
+
+## 📉 Variables del modelo
+
+| Variable         | Tipo      | Influencia          |
+| ---------------- | --------- | ------------------- |
+| Radiación solar  | Principal | Variable a predecir |
+| Brillo solar     | Estado    | Positiva            |
+| Nubosidad        | Estado    | Negativa            |
+| Humedad relativa | Flujo     | Indirecta           |
+| Precipitación    | Flujo     | Indirecta           |
+
+---
+
+## 📊 Resultados obtenidos
+
+El sistema logró:
+
+* Simular radiación solar diaria
+* Comparar datos reales vs simulados
+* Obtener errores entre:
 
 ```bash
-  cd ...
+3% hasta 20%
 ```
 
-Create env
+Dependiendo de la cantidad de datos y condiciones iniciales.
+
+---
+
+## 🖥️ Ejecución del proyecto
+
+Clonar el repositorio:
 
 ```bash
-  python -m venv .venv
+git clone https://github.com/tuusuario/prediccion-radiacion-solar.git
 ```
 
-Use the env (in Linux)
+Instalar dependencias:
 
 ```bash
-  source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
-Use the env (in Windows)
+Ejecutar:
 
 ```bash
-  .venv\Scripts\activate
+python main.py
 ```
 
-Install dependencies
+---
+
+## 📷 Ejemplo de salida
+
+El sistema genera:
+
+* Gráficas comparativas
+* Fórmulas del modelo
+* Error porcentual
+* Simulación por días
+
+Ejemplo:
 
 ```bash
-  pip install -r requirements.txt
+Promedio real:      456.96 cal/cm²
+Promedio simulado:  371.14 cal/cm²
+Error:              18.78%
 ```
 
-Start the program
+---
 
-```bash
-  python view.py
-```
+## 🌱 Aplicaciones del proyecto
+
+Este sistema puede utilizarse en:
+
+* Instalación de paneles solares
+* Planeación energética
+* Agricultura de precisión
+* Estudios climáticos
+* Investigación académica
+
+---
+
+## 👨‍💻 Autores
+
+* David Santiago Lotero Rodríguez
+* Luis Eduardo Hernández Rincón
+* Gabriel Esteban Infante Acosta
+* Edison Ferney Gutiérrez Buitrago
+* Harold Ricardo Alvarado Leandro
+
+---
+
+## 📚 Referencias
+
+El proyecto se fundamenta en:
+
+* Dinámica de Sistemas
+* Regresión lineal múltiple
+* Simulación estadística
+* Modelado climático
+
+---
+
+## 📄 Licencia
+
+Proyecto desarrollado con fines académicos en la:
+
+**Universidad Pedagógica y Tecnológica de Colombia – UPTC**
+
 
